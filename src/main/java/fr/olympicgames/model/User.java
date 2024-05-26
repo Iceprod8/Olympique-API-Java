@@ -14,6 +14,9 @@ public class User {
     private Long id;
 
     @Column(nullable = false, unique = true)
+    private String email;
+    
+    @Column(nullable = false, unique = true)
     private String username;
 
     @Column(nullable = false)
@@ -23,5 +26,5 @@ public class User {
     private String role;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Ticket> tickets;
+    private List<Order> orders;
 }

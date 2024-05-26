@@ -3,7 +3,7 @@ package fr.olympicgames.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.List;
+import java.sql.Date;
 
 @Data
 @Entity
@@ -27,6 +27,5 @@ public class Order {
     @Column(nullable = false)
     private double totalPrice;
 
-    @OneToMany(mappedBy = "order")
-    private List<Ticket> tickets;
+    private Date orderDate;
 }

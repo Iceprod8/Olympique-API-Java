@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -22,6 +23,13 @@ public class Event {
     @Column(nullable = false)
     private double price;
 
-    @Column(nullable = false)
-    private String stadium;
+    @ManyToOne
+    @JoinColumn(name = "stadium_id", nullable = false)
+    private Stadium stadium;
+
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL)
+    private List<Ticket> tickets;
+
+    @OneToMany(mappedBy = "event", cascade = CascadeType.ALL)
+    private List<Order> orders;
 }
