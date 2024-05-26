@@ -6,7 +6,7 @@ Bienvenue dans l'API de billetterie des Jeux Olympiques ! Cette API vous permet 
 
 ## Prérequis
 
-- Java 11 ou plus récent
+- Java
 - Maven
 - Postman pour tester les routes de l'API
 - Postgres SQL v16 [download](https://www.postgresql.org/download/windows/)
