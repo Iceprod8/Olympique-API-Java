@@ -16,7 +16,7 @@ Bienvenue dans l'API de billetterie des Jeux Olympiques ! Cette API vous permet 
 1. Clonez le repository:
 
    ```bash
-   git clone https://github.com/your-username/olympic-games-api.git
+   git clone https://github.com/Iceprod8/Olympique-API-Java.git
    cd olympic-games-api
    ```
 
