@@ -183,3 +183,5 @@ L'API sera disponible à `http://localhost:8080`.
 ## Fichier Postman
 
 Le fichier JSON pour Postman se trouve dans ce repository sous le nom `postman.json`. Importez-le dans Postman pour tester facilement toutes les routes de l'API.
+
+Nathan Samochval
